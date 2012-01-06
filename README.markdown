@@ -43,25 +43,18 @@ A
 
 **EXAMPLE**
 
-```require_once("node.php");
-
+```
+require_once("node.php");
 require_once("tree.php");
 
 // You can use database rows instead, this is just an example.
-
 $data = array();
-
 $data[] = array("id" => 1, "name" => "A", "id_parent" => 0);
-
 $data[] = array("id" => 2, "name" => "B", "id_parent" => 1);
-
 $data[] = array("id" => 3, "name" => "C", "id_parent" => 1);
-
 $data[] = array("id" => 4, "name" => "D", "id_parent" => 3);
-
 $data[] = array("id" => 5, "name" => "E", "id_parent" => 3);
 
 $tree = new tree($data);
-
 $output = $tree->getTree();
 ```
